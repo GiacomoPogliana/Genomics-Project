@@ -17,7 +17,7 @@ To run this pipeline, ensure the following bioinformatics tools are installed an
 * **BCFtools & bgzip** (VCF manipulation and filtering)
 
 ## Directory Structure and Input Files
-The script expects a specific directory structure to function correctly. You must run the script from a A main directory containing specific reference files. Within this directory, a specific subfolder for each trio, containing the respective paired-end FASTQ file.
+The script expects a specific directory structure to function correctly. You must run the script from a main directory containing specific reference files. Within this directory, a specific subfolder for each trio is mandatory, containing the respective paired-end FASTQ file.
 
 **Required files in the main directory:**
 * `chr20` (Bowtie2 index files for chromosome 20)
@@ -39,7 +39,7 @@ The pipeline categorizes each trio based on the inheritance model passed via com
 
 **Syntax:**
 ```bash
-./your_script_name.sh [INHERITANCE_FLAG] [trio_name1] [trio_name2] ...
+./Pipeline.sh [INHERITANCE_MODEL] [trio_name1] [trio_name2] ...
 ```
 
 **Available Inheritance Flags:**
