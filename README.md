@@ -1,5 +1,4 @@
-**Authors:** Giacomo Pogliana, Lorenzo Ponzone
-**Date:** [Inserisci Data]
+##Authors:## Giacomo Pogliana, Lorenzo Ponzone
 
 # Trio Variant Calling & Inheritance Filtering Pipeline
 
