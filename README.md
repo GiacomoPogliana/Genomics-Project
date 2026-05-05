@@ -58,13 +58,14 @@ For each trio directory, the pipeline executes the following steps:
 
 1. **File Renaming & Setup:** Identifies the FASTQ pairs and assigns read groups (`SM:child`, `SM:father`, `SM:mother`).
 2. **Alignment:** Aligns reads to the `chr20` reference using `Bowtie2` and sorts the output to BAM files using `SAMtools`.
-3. **Quality Control:** * Runs `FastQC` on the generated BAM files.
-    * Runs `Qualimap bamqc` using the provided exome BED file.
-4. **Coverage Analysis:** Generates a bedgraph (`.bg`) coverage track with a maximum depth of 100x using `BEDTools`.
-5. **MultiQC:** Aggregates all QC reports into a single HTML file (`[trio_name]_multiqc_report.html`).
-6. **Variant Calling:** Performs joint variant calling on the trio using `FreeBayes`.
-7. **Compression:** Compresses and indexes the resulting VCF using `bgzip` and `bcftools`.
-8. **Variant Filtering:** Filters the VCF based on the clinical inheritance model specified in the command arguments. Only variants intersecting the BED file, matching the expected Genotype (`GT`), and having a quality score `QUAL > 20` are kept.
+3. **Quality Control:**
+   * Runs `FastQC` on the generated BAM files.
+   * Runs `Qualimap bamqc` using the provided exome BED file.
+5. **Coverage Analysis:** Generates a bedgraph (`.bg`) coverage track with a maximum depth of 100x using `BEDTools`.
+6. **MultiQC:** Aggregates all QC reports into a single HTML file (`[trio_name]_multiqc_report.html`).
+7. **Variant Calling:** Performs joint variant calling on the trio using `FreeBayes`.
+8. **Compression:** Compresses and indexes the resulting VCF using `bgzip` and `bcftools`.
+9. **Variant Filtering:** Filters the VCF based on the clinical inheritance model specified in the command arguments. Only variants intersecting the BED file, matching the expected Genotype (`GT`), and having a quality score `QUAL > 20` are kept.
 
 ## Outputs
 Within each `trio_*` directory, the pipeline will generate:
