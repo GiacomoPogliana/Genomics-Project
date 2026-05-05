@@ -40,3 +40,4 @@ The pipeline categorizes each trio based on the inheritance model passed via com
 **Syntax:**
 ```bash
 ./your_script_name.sh [INHERITANCE_FLAG] [trio_name1] [trio_name2] ...
+
