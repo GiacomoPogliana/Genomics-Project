@@ -17,9 +17,9 @@ To run this pipeline, ensure the following bioinformatics tools are installed an
 * **BCFtools & bgzip** (VCF manipulation and filtering)
 
 ## Directory Structure and Input Files
-The script expects a specific directory structure to function correctly. You must run the script from a parent directory containing specific reference files, and the fastq files must be organized into subdirectories for each trio.
+The script expects a specific directory structure to function correctly. You must run the script from a A main directory containing specific reference files. Within this directory, a specific subfolder for each trio, containing the respective paired-end FASTQ file.
 
-**Required files in the parent directory:**
+**Required files in the main directory:**
 * `chr20` (Bowtie2 index files for chromosome 20)
 * `chr20.fa` (Reference genome FASTA for chromosome 20)
 * `chr20_ILMN_Exome_2.0_Plus_Panel.hg38_padded.bed` (Target panel BED file)
