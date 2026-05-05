@@ -1,6 +1,7 @@
 # TITOLO
 
-## Authors: Giacomo Pogliana, Lorenzo Ponzone
+## Authors: 
+Giacomo Pogliana, Lorenzo Ponzone
 
 ## Overview
 This bash pipeline is designed to process genomic data for family trios (child, father, mother). It automates read alignment, quality control, variant calling, and disease-specific variant filtering based on user-defined clinical inheritance models. The pipeline specifically targets chromosome 20 (chr20) and uses a predefined exome panel BED file.
