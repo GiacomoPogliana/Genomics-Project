@@ -1,4 +1,4 @@
-# TITOLO
+# A Bioinformatics Workflow for Identifying Rare Diseases in Children from Trio-Family Data
 
 ## Authors: 
 Giacomo Pogliana, Lorenzo Ponzone
